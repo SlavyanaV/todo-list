@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="main-heading">
+      <h1>To-do list</h1>
+    </div>
+    <!-- Idea for project extension -->
+    <!-- <div class="projects">
+      <h2>Your projects</h2>
+      <ul>
+        <li>Personal</li>
+        <li>Family</li>
+        <li>Work</li>
+        <input type="text" placeholder="Project name" />
+      </ul>
+      <input type="button" value="Add project" />
+    </div> -->
+    <div class="todo-list">
+      <h2>Your list</h2>
+      <input type="text" id="name" placeholder="Task name" />
+      <input type="text" id="description" placeholder="Task description" />
+      <label for="priority">Task priority</label>
+      <select name="priority" id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="button" value="Add task" />
+      <ul>
+        <li>eg. Make breakfast</li>
+        <li>eg. Walk the dog</li>
+        <li>eg. Call Maria</li>
+      </ul>
+    </div>
+  </body>
+</html>
