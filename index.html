@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Todo List</title>
   </head>
   <body>
@@ -21,8 +22,10 @@
       </ul>
       <input type="button" value="Add project" />
     </div> -->
-    <div class="todo-list">
-      <h2>Your list</h2>
+    <div class="todo-heading">
+      <h2>Your list with tasks is here!</h2>
+    </div>
+    <div class="task-adding">
       <input type="text" id="name" placeholder="Task name" />
       <input type="text" id="description" placeholder="Task description" />
       <label for="priority">Task priority</label>
@@ -32,6 +35,8 @@
         <option value="high">High</option>
       </select>
       <input type="button" value="Add task" />
+    </div>
+    <div class="task-listing">
       <ul>
         <li>eg. Make breakfast</li>
         <li>eg. Walk the dog</li>
