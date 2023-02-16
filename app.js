@@ -23,6 +23,21 @@ const addTodo = () => {
   deleteButton.appendChild(deleteButtonIcon);
   deleteTd.appendChild(deleteButton);
 
+  taskName.style.borderColor = '#b9a183';
+  taskDescription.style.borderColor = '#b9a183';
+
+  if (taskName.value.length <= 2 || taskDescription.value.length <= 2) {
+    if (taskName.value.length <= 2) {
+      taskName.style.borderColor = '#d200008c';
+    }
+
+    if (taskDescription.value.length <= 2) {
+      taskDescription.style.borderColor = '#d200008c';
+    }
+
+    return;
+  }
+
   currentName.textContent = taskName.value;
   currentDescription.textContent = taskDescription.value;
   currentPriority.textContent = taskPriority.value;
