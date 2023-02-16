@@ -16,33 +16,24 @@
     <div class="main-heading">
       <h1>To-do list</h1>
     </div>
-    <!-- Idea for project extension -->
-    <!-- <div class="projects">
-      <h2>Your projects</h2>
-      <ul>
-        <li>Personal</li>
-        <li>Family</li>
-        <li>Work</li>
-        <input type="text" placeholder="Project name" />
-      </ul>
-      <input type="button" value="Add project" />
-    </div> -->
     <div class="todo-heading">
       <h2>Your list with tasks is here!</h2>
     </div>
     <div class="task-adding">
-      <input type="text" id="name" placeholder="Task name" />
-      <input type="text" id="description" placeholder="Task description" />
-      <label for="priority">Task priority</label>
+      <label for="name">Task name:</label>
+      <input type="text" id="name" placeholder="Enter name..." />
+      <label for="description">Task description:</label>
+      <input type="text" id="description" placeholder="Enter description..." />
+      <label for="priority">Task priority:</label>
       <select name="priority" id="priority">
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
       </select>
       <button id="add-button"><i class="fa-solid fa-plus"></i></button>
     </div>
     <div class="task-listing">
-      <table>
+      <table id="todos">
         <thead>
           <tr>
             <th></th>
@@ -51,8 +42,7 @@
             <th>Task priority</th>
           </tr>
         </thead>
-        <tbody id="table-body">
-        </tbody>
+        <tbody id="table-body"></tbody>
       </table>
     </div>
   </body>

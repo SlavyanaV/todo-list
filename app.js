@@ -11,6 +11,7 @@ const addTodo = () => {
   const checkBoxTd = document.createElement('td');
   const checkBox = document.createElement('input');
   checkBox.setAttribute('type', 'checkbox');
+  checkBox.id = 'checkbox';
   checkBoxTd.appendChild(checkBox);
   const currentName = document.createElement('td');
   const currentDescription = document.createElement('td');
@@ -30,7 +31,7 @@ const addTodo = () => {
   tableRow.appendChild(currentName);
   tableRow.appendChild(currentDescription);
   tableRow.appendChild(currentPriority);
-  tableRow.appendChild(deleteButton);
+  tableRow.appendChild(deleteTd);
 
   tableBody.appendChild(tableRow);
 

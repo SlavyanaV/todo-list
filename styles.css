@@ -1,26 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #4b483f;
+}
+
 html {
   background-image: url(./images/background.jpg);
 }
 
-h1 {
-  text-align: center;
-  font-size: 60px;
-  color: #4b483f;
-}
-
+h1,
 h2 {
   text-align: center;
-  font-size: 30px;
-  color: #4b483f;
+  font-size: 60px;
+  margin: 10px;
 }
 
 .task-adding {
+  font-weight: bold;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: baseline;
+  gap: 20px;
+  font-size: 30px;
+  margin: 20px;
 }
 
 .task-listing {
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+
+table,
+#name,
+#description,
+#priority {
+  border-collapse: collapse;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: #b9a183;
+}
+
+#name,
+#description,
+#priority {
+  font-size: 20px;
+}
+
+table {
+  width: 70%;
+}
+
+#description {
+  width: 20%;
+}
+
+th {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+td {
+  border: 2px solid #4b483f;
+  padding: 8px;
+  font-size: 20px;
+}
+
+button {
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+  background: none;
+  border-color: #b9a183;
+}
+
+#add-button {
+  padding: 5px 12px 5px 12px;
+}
+
+#table-body tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+#table-body tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover {
+  background-color: #bd9d3d7e;
 }
