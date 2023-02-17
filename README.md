@@ -8,7 +8,9 @@ This is a simple web application built with HTML, CSS, and JavaScript that allow
 
 To get started with this application, you can either clone this repository or download the code as a ZIP file and extract it to your local machine.
 
+```
 git clone https://github.com/SlavyanaV/todo-list.git
+```
 
 Alternatively, you can access the live demo hosted on GitHub Pages by visiting https://slavyanav.github.io/todo-list/.
 
